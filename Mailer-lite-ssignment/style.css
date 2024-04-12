@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+}
+
+body{
+    background-image: url('./assets/BG-DESKTOP.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 624px;
+    padding: 8px 24px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
+    background-color: rgb(255, 255, 255, 0.1);
+    position:static;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 70px;
+    z-index:4;
+
+}
+
+.logo img{
+    width: 60%;
+    height: auto;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+ 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:14px;
+    font-weight: 300;
+   
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 16px 32px;
+    padding: 24px;
+   
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+    
+}
+.hero-left h1{
+    font-family: Raleway, sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+}
+
+.hero-left span{
+    font-family: Raleway, sans-serif;
+    color: #0AC269;
+}
+
+.hero-left p{
+    font-size: 13px;
+    font-weight: 300;
+    color:rgb(255, 255, 255, 0.7);
+    
+}
+
+ .btn-primary{
+    padding: 12px 32px;
+    background-color: #0AC269;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: 4px solid rgb(10, 194, 105, 0.2) ;
+    
+}
+
+.btn-outlined{
+    padding: 12px 32px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #0AC269;
+    outline: none;
+
+}
+
+.hero-left .CTAs{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+
+
+.hero-right{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    
+}
+
+.hero-right img{
+    width: 85%;
+    height: auto;
+    
+}
+
+.cta-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 24px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 48px;
+}
+
+.cta-cards a{
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border:1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 20px;
+
+}
+
+.card-header{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.card-header h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.card-body{
+    color: rgb(255, 255, 255, 0.7);
+    font-size:12px ;
+    font-weight: 300;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    body{
+        
+        background-repeat: repeat-y;
+    }
+
+
+    nav{
+        max-width: 568px;
+    }
+
+    .hero{
+        margin: 16px 32px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+
+    .hero-left {
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+
+    .hero-left p{
+        font-size: 14px;
+    }
+
+    .hero-right{
+        justify-content: center;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .hero-right img{
+        width:75%;
+    }
+
+    .cta-cards{
+        flex-direction: row;
+        gap: 16px;
+        margin-left: 80px;
+        margin-right: 80px;
+        
+    }
+
+    .card{
+        padding: 16px;
+    }
+
+    .card-header h3{
+        font-size: 13px;
+    }
+
+    .card-body{
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+    body{
+        
+        background-repeat: repeat-y;
+    }
+
+
+    nav{
+        max-width: 250px;
+        margin-bottom: 24px;
+
+        
+        justify-content: center;
+        
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    
+    .hero{
+        margin: 16px 32px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    
+    }
+
+    .hero-left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left h1{
+        font-size: 32px;
+
+    }
+
+
+    .hero-left p{
+        font-size: 12px;
+    }
+
+    .CTAs{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+
+    }
+
+    .btn-primary{
+        padding: 20px 32px;
+    }
+
+    .btn-outlined{
+        padding: 20px 32px;
+    }
+
+    .hero-right{
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .hero-right img{
+        width: 90%;
+    }
+
+    .cta-cards{
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
+        
+    }
+
+    .card{
+        padding: 16px;
+    }
+
+    .card-header h3{
+        font-size: 13px;
+    }
+
+    .card-body{
+        font-size: 12px;
+    }
+
+
+}
+
+
+
+
+
